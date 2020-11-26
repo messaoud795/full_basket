@@ -1,0 +1,57 @@
+.orderUpdate_content {
+  padding: 20px;
+  min-height: 72vh ;
+  margin: 0 !important;
+
+}
+.orderUpdate {
+  width: 100%;
+  margin: 0 !important;
+}
+.orderUpdate_details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  margin: 0 !important;
+  flex-wrap: wrap;
+}
+.orderUpdate_details > h2 {
+  color: green;
+}
+.orderUpdate_details > button {
+  height: 40px;
+  width: 150px;
+}
+.orderUpdate_client {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+}
+.orderUpdate_client > span {
+  margin: 0 20px;
+}
+
+.order_table {
+  width: 70%;
+}
+@media screen and (max-width: 500px) {
+  .orderUpdate h3 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .order_table {
+    font-size: 9px;
+  }
+  .order_table th {
+    padding: 8px;
+  }
+  .orderUpdate_client {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  #updateStatusBtn {
+    margin: 20px auto;
+  }
+}

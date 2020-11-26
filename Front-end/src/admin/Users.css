@@ -1,0 +1,27 @@
+.users {
+  min-height: 72vh ;
+  width: 100%;
+  margin: 0 !important;
+  padding: 20px;
+}
+.usersList{
+    width: 100%;
+    margin: 0 !important; 
+}
+@media screen and (max-width: 500px) {
+  .users h2 {
+    font-size: 18px;
+  }
+  .order_table {
+    width: 100% !important;
+  }
+  .users_updateBtn {
+    font-size: 12px !important;
+    padding: 6px !important;
+  }
+  .users {
+    width: 100%;
+    margin: 0 !important;
+    padding: 10px;
+  }
+}

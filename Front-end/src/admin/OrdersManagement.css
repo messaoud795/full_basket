@@ -1,0 +1,41 @@
+.orderManagement {
+  padding: 20px;
+  min-height: 72vh ;
+  margin: 0 !important;
+}
+
+.orderManagement_detailsTable {
+  background-color: transparent !important;
+  border: none;
+
+}
+.orderManagement_detailsTable tr {
+  border: none;
+  background-color: transparent !important;  height: 60px;
+
+}
+.orderManagement_detailsTable td {
+  border: none;
+  background-color: transparent !important;
+  width: fit-content;  
+
+}
+
+@media screen and (max-width: 500px) {
+  .orderManagement h2 {
+    font-size: 18px;
+  }
+  .order_table {
+    font-size: 12px;
+  }
+  .order_table th {
+    padding: 8px;
+  }
+  .orderManagement_detailsTable tr {
+    height: 70px;
+  }
+  .orderManagement_detailsTable td {
+font-size: 10px;    width: 50px;  
+  
+  }
+}

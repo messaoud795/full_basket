@@ -1,0 +1,114 @@
+.header {
+  background-color: rgb(82, 152, 192);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  justify-content: space-between;
+  padding: 10px 30px;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.header-logo {
+  max-width: 80px;
+  height: auto;
+  margin: 0 0px 10px 0px;
+  border-radius: 50%;
+}
+.header_search {
+  display: flex;
+  align-items: center;
+}
+.header_search_form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.header_search_form > button {
+  padding: 0;
+  background-color: transparent;
+  border: transparent;
+}
+.header_searchInput {
+  height: 35px !important;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.header_searchIcon {
+  background-color: rgb(32, 252, 50);
+  height: 35px !important;
+  padding: 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.header_nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.header_link {
+  color: white;
+  text-decoration: none;
+  width: 100%;
+}
+.header_option {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  min-width: 60px;
+  margin-right: 8px;
+  font-family: "Roboto", sans-serif;
+}
+.hearder_optionLineTwo {
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.header_nav :hover {
+  color: rgb(246, 250, 7) !important;
+  text-decoration: none !important;
+}
+
+.header_Basket {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border: white solid 2px;
+  padding: 2px;
+  min-width: 40px;
+  max-width: 60px;
+}
+.header_Basket > span {
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+}
+
+.shopping_basket_logo {
+  color: white;
+  font-size: 25px;
+}
+
+.header_userAuth {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 500px) {
+  .hearder_optionLineTwo {
+    font-size: 15px !important;
+  }
+  .header {
+    padding: 8px !important;
+    width: 100% !important;
+  }
+}

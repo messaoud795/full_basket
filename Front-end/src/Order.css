@@ -1,0 +1,72 @@
+.order {
+  padding: 20px;
+  margin: 0 !important;
+  min-height: 470px !important;
+  background-color: white !important;
+}
+.order_content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 !important;
+}
+.order_table {
+  margin: 20px;
+}
+.order_table td {
+  padding: 15px 0 !important;
+  width: 200px;
+  text-align: center;
+  border: solid 2px rgba(153, 151, 151, 0.705);
+}
+.order_table tr {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0 !important;
+}
+
+.order_table tr:nth-child(even) {
+  background-color: #d9e4d9;
+}
+.order_table tr:nth-child(odd) {
+  background-color: white;
+}
+.order_table th {
+  background-color: black;
+  width: 200px !important;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  border: solid 1px rgba(230, 225, 225, 0.705);
+}
+.order_total {
+  background-color: rgb(136, 241, 110);
+  display: flex;
+  flex-direction: column;
+  border: white 3px solid;
+  border-radius: 8px;
+  height: 120px;
+  padding: 15px;
+  align-items: center !important;
+  justify-content: space-evenly;
+  margin: 20px;
+  font-weight: 700;
+  font-family: "Roboto", "sans-serif";
+}
+.order_total > button {
+  height: 35px;
+  border-radius: 8px;
+  margin-top: 20px;
+  width: fit-content;
+}
+.order > h2 {
+  font-family: "Amiri", serif;
+}
+@media screen and (max-width: 500px) {
+  .order > h2 {
+    font-size: 25px;
+  }
+  .order_table {
+    margin: 0;
+  }
+}

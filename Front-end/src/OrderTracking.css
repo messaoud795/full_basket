@@ -1,0 +1,83 @@
+.orderTracking {
+  margin: 0 !important;
+}
+.orderTracking_content {
+  padding: 20px;
+  min-height: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+.productsOrdred tr {
+  background-color: transparent !important;
+  border: none;
+}
+.productsOrdred td {
+  border: none;
+}
+.orderTracking h2 {
+  font-family: "roboto";
+}
+#orderId :hover {
+  cursor: pointer;
+}
+#orderTrackingTable {
+  width: 800px !important;
+}
+#orderId :visited {
+  color: blue;
+}
+.orderTracking_timeline {
+  width: 360px;
+  position: fixed;
+  top: 17%;
+  left: 5%;
+}
+
+@media screen and (max-width: 500px) {
+  .orderTracking h2 {
+    font-size: 18px;
+    margin: 20px auto;
+  }
+  #orderTrackingTable {
+    font-size: 12px;
+
+    width: 100% !important;
+  }
+
+  #orderTrackingTable th {
+    padding: 8px;
+  }
+  .orderTracking_content {
+    padding: 1px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .orderTracking_timeline {
+    top:0,;left:0
+  }
+ 
+}
+@media screen and (max-width: 700px) {
+  .orderTracking h2 {
+    font-size: 18px;
+    margin: 20px auto;
+  }
+  #orderTrackingTable {
+    font-size: 12px;
+    width: 100% !important;
+  }
+
+  #orderTrackingTable th {
+    padding: 8px;
+  }
+  .orderTracking_content {
+    padding: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .orderTracking_timeline {
+    position: relative !important;
+    padding: 0px;
+  }
+ 
+}

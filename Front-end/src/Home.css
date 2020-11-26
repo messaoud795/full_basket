@@ -1,0 +1,51 @@
+.home_image {
+  width: 100%;
+  height: auto;
+}
+.home {
+  width: 100%;
+  margin: 0 !important;
+}
+.home_row {
+  display: flex;
+  z-index: 1;
+  padding: 25px  ;
+  flex-wrap: wrap;
+  min-height: 600px;
+}
+.home > h2 {
+  font-family: "Amiri";
+  padding: 20px 0 0 40px;
+}
+.home_img {
+  height: 350px !important;
+}
+.home_carousel {
+  margin: 30px auto;
+  width: 70% !important;
+}
+
+@media screen and (max-width: 500px) {
+  .home h2 {
+    font-size: 18px;
+  }
+  .home_row {
+    padding: 20px auto;
+  }
+  .home_carousel {
+    margin: 30px auto;
+    width: 100% !important;
+  }
+  .home_img {
+    height: 200px !important;
+  }
+}
+@media screen and (max-width: 770px) {
+  .home h2 {
+    font-size: 18px;
+  }
+  .home_row {
+    padding: 20px auto;
+    justify-content: center;
+  }
+}

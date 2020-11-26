@@ -1,0 +1,66 @@
+.productForm {
+  padding: 15px;
+  height: auto;
+font-family: 'roboto';
+}
+.productForm input {
+  height: 30px;
+  margin: 0 10px;
+}
+.productForm_description {
+  width: 500px;
+  margin:  8px 0 !important;
+}
+
+.createFormButtons {
+  display: flex;
+  justify-content: flex-end;
+}
+.createFormButtons > button {
+  width: 70px;
+}
+.productForm_infos {
+  display: flex;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.productForm_number {
+  width: 50px;
+}
+.productForm_title {
+  width: 200px;
+}
+.create {
+  margin: 0 10px;
+  background-color: green;
+  height: 30px;
+}
+.cancel {
+  margin: 0 10px;
+  background-color: red;
+  height: 30px;
+}
+@media screen and (max-width :700px){
+    .productForm  h2 {
+            font-size: 16px;
+      }
+      .productForm  h4 {
+        font-size: 15px;
+        margin: 7px 0;
+
+  }
+  .productForm_infos {
+    display: flex;flex-wrap: wrap;margin:0px
+  }
+  .productForm_description {
+    width: 87%;
+    margin: 8px 0 16px !important;
+  }
+  .productForm input {
+    height: 25px;
+    margin: 7px;
+  }
+  .productForm {
+    width: 240px;
+  }
+}

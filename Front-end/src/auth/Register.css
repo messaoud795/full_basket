@@ -1,0 +1,38 @@
+.logo{width: 100px;height:100px;
+    margin:20px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+}
+    .register_container{
+        display: flex;
+        flex-direction: column;
+        width:300px;
+        padding: 20px;
+        border: 1px solid lightgray;
+    }
+    .register{
+        background-color: white;
+        min-height: 470px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .register_container  > h1{
+      font-weight: 500;margin-bottom: 20px;color: rgb(0, 255, 21);text-align: center;
+    }
+    .register_container > form  > h5{
+    margin-bottom: 5px;
+    }
+    .register_container > form  > input{
+    height: 30px; margin-bottom: 10px; background-color: white; width: 98%; }
+    
+    .register_finishButton{
+        border-radius: 2px;
+        height: 30px;
+        width: 100%;
+        border: 1px solid;
+        margin-top: 10px;
+        background-color: rgb(9, 169, 209);
+    }
+    .error{text-align: center;color: red;font-weight: 300;}
+    

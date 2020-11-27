@@ -35,7 +35,8 @@ function basketReducer(state = { basket: i, total: s }, action) {
             quantityOrdred: action.payload.quantityOrdred,
           },
         ];
-        window.localStorage.setItem('basketStored',JSON.stringify(newBasket))
+        window.localStorage.setItem('basketStored',JSON.stringify(newBasket));
+        PopUp("Product in Basket now");
         return {
           basket: newBasket,
         };

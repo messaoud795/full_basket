@@ -52,17 +52,19 @@ function App() {
   }
   function ConnectRoute(props) {
     let token = window.localStorage.getItem("token");
+    let tokenAdmin = window.localStorage.getItem("tokenAdmin");
     return (
       <Route
         path={props.path}
         render={() => {
-          if (token) {
+          if ((token)||(tokenAdmin)) {
              SaveBasketToDB(token);
-            window.localStorage.removeItem("basketStored");
-            window.location.reload();
-            window.localStorage.removeItem("token");
-            window.localStorage.removeItem("tokenAdmin");
-            window.localStorage.removeItem("firstName");
+            window.localStorage.removeItem("basketStored");   
+             window.localStorage.removeItem("tokenAdmin");     
+             window.localStorage.removeItem("token");
+             window.localStorage.removeItem("firstName");
+             console.log("hiii")
+            // window.location.reload();
             return <Redirect to={{ pathname: "/" }} />;
           } else {
             return <props.component />;

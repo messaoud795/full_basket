@@ -20,7 +20,10 @@ if (process.env.NODE_ENV==='production'){
   app.get(/^(?!.*\bapi\b).*$/i, (req, res) => {
     res.sendFile(path.resolve(__dirname, 'Front-end', 'build', 'index.html'));
   })
-
+  app.get('/uploads/images/:name', function (req,res, next)
+  {   const fileName = req.params.name;  
+   res.sendFile(fileName, options, function (err) { console.log(err)}); next();}
+   );
 }
 //middlewaree
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -29,7 +32,8 @@ app.use(cors());
 app.use( '/uploads/images',express.static(path.join('uploads','images' )))
 app.get('/uploads/images/:name', function (req,res, next)
  {   const fileName = req.params.name;  
-  res.sendFile(fileName, options, function (err) { console.log(err)}); });
+  res.sendFile(fileName, options, function (err) { console.log(err)}); next();}
+  );
 
 app.use((req, res,next)=> {
 res.setHeader('Access-Control-Allow-Headers','Origin,X-Requested-With,Content-Type, Accept, Authorization')

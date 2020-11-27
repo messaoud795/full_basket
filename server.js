@@ -27,6 +27,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
 app.use( '/uploads/images',express.static(path.join('uploads','images' )))
+app.get('/uploads/images/:name', function (req,res, next)
+ {   const fileName = req.params.name;  
+  res.sendFile(fileName, options, function (err) { console.log(err)}); });
+
 app.use((req, res,next)=> {
 res.setHeader('Access-Control-Allow-Headers','Origin,X-Requested-With,Content-Type, Accept, Authorization')
 next()})

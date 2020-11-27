@@ -31,7 +31,7 @@ product.stock>0? setStockText("In stock"):setStockText("Not available")
         <p>{product.title}</p>
         <p>{product.price + "$"}</p>
       </div>
-      <img src={`/${product.image}`} alt="" />
+      <img title={product._id} src={`https://full-basket-demo.herokuapp.com/${product.image}`} alt="" />
 
       <div className="product_description">
         <p>{product.description}</p>

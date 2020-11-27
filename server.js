@@ -24,8 +24,8 @@ app.get("*",function (req,res, next)
 {   let url=req.originalUrl;
   if (url.startsWith("/uploads")) {let file=url.slice(16);
    res.sendFile (path.resolve(__dirname, 'uploads', 'images', file));return;}
-else if (!(url.startsWith("/api")))
-{res.sendFile(path.resolve(__dirname, 'Front-end', 'build', 'index.html'));}
+
+  else if (!(url.startsWith("/api/"))) {res.sendFile(path.resolve(__dirname, 'Front-end', 'build', 'index.html'));return}
 next();});
 }
 //middlewaree

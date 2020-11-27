@@ -27,7 +27,6 @@ router.get("/home", async (req, res) => {
       }
     });
   }
-  console.log(homeProducts)
   res.status(200).send(homeProducts);
 });
 //send products for a specific category

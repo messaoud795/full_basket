@@ -14,17 +14,23 @@ const path=require('path')
 //app config
 const app = express();
 const port=process.env.PORT || 5000;
+app.use((req, res,next)=> {
+  res.setHeader('Access-Control-Allow-Headers','Origin,X-Requested-With,Content-Type, Accept, Authorization')
+  next()})
 if (process.env.NODE_ENV==='production'){
   app.use(express.static('Front-end/build'));
 //send the react html if url not for api or images
-  app.get("*",function (req,res, next)
+app.get("*",function (req,res, next)
 {   let url=req.originalUrl;
-if (!(url.startsWith("/api"))||(url.startsWith("/uploads")))
+  if (url.startsWith("/uploads")) {let file=url.slice(16);
+   res.sendFile (path.resolve(__dirname, 'uploads', 'images', file));return;}
+else if (!(url.startsWith("/api")))
 {res.sendFile(path.resolve(__dirname, 'Front-end', 'build', 'index.html'));}
 next();});
- 
 }
 //middlewaree
+
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
@@ -34,9 +40,7 @@ app.get('/uploads/images/:name', function (req,res)
   res.sendFile(fileName, options, function (err) { console.log(err)});}
   );
 
-app.use((req, res,next)=> {
-res.setHeader('Access-Control-Allow-Headers','Origin,X-Requested-With,Content-Type, Accept, Authorization')
-next()})
+
 
 const mongo_url = "mongodb+srv://nabil123:1d2a3m4m5e@cluster0.pkyyp.mongodb.net/<dbname>?retryWrites=true&w=majority";
 

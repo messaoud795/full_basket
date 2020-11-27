@@ -16,17 +16,13 @@ const app = express();
 const port=process.env.PORT || 5000;
 if (process.env.NODE_ENV==='production'){
   app.use(express.static('Front-end/build'));
-  //get all request except those for api
-  // app.get(/^(?!.*\bapi\b).*$/i, (req, res) => {
-  //   if (req.params.path)
-  //   res.sendFile(path.resolve(__dirname, 'Front-end', 'build', 'index.html'));
-  // })
-  app.get('*', function (req,res, )
-  {   let url=req.originalUrl;
-  if (!(url.contains("api")||url.contains("uploads")))
-  res.sendFile(path.resolve(__dirname, 'Front-end', 'build', 'index.html'));
-  }
-   );
+//send the react html if url not for api or images
+  app.get("*",function (req,res, next)
+{   let url=req.originalUrl;
+if (!(url.startsWith("/api"))||(url.startsWith("/uploads")))
+{res.sendFile(path.resolve(__dirname, 'Front-end', 'build', 'index.html'));}
+next();});
+ 
 }
 //middlewaree
 app.use(bodyParser.urlencoded({ extended: true }));

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Product.css";
 import { useDispatch , useSelector} from "react-redux";
+import {Button} from 'react-bootstrap'
 
 
 function Product({ product }) {
@@ -37,7 +38,7 @@ product.stock>0? setStockText("In stock"):setStockText("Not available")
         <p>{product.description}</p>
       </div>
       <div className="product_stock"><span>{stockText}</span></div>
-      <button onClick={addProduct}>Add to basket </button>
+      <Button variant="success" onClick={addProduct}>Add to basket </Button>
     </div>
   );
 }

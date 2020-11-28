@@ -53,6 +53,7 @@
 .checkoutproduct_deleteBtn{color: gray;
    position: relative;
    left: 95%; 
+   cursor: pointer;
 }
 
 

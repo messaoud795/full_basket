@@ -69,7 +69,7 @@ function ProductAdmin({ product, updateProducts }) {
         <p>{product.title}</p>
         <p>{product.price + "$"}</p>
       </div>
-      <iframe title={product._id} src={`https://full-basket-demo.herokuapp.com/${product.image}`} alt="" />
+      <img  src={`https://full-basket-demo.herokuapp.com/${product.image}`} alt="" />
 
       <div className="product_description">
         <p>{product.description}</p>

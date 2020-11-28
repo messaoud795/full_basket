@@ -24,15 +24,15 @@
   margin-bottom: 10px;
 }
 .login_container > p {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 13px;
-  }
+  margin-top: 10px;
+  text-align: center;
+  font-size: 13px;
+}
 #errorMsg {
-    color: red;
-    margin-bottom: 20px;
-text-align: center;  }
-
+  color: red;
+  margin-bottom: 20px;
+  text-align: center;
+}
 
 .login_container > form > h5 {
   margin-bottom: 5px;
@@ -44,27 +44,19 @@ text-align: center;  }
   width: 98%;
 }
 .login_signInButton {
-  background: yellow;
-  border-radius: 2px;
-  height: 30px;
-  width: 100%;
-  border: 1px solid;
-  margin-top: 10px;
-  border-color: orange;
+  width: 60%;
+  margin: 10px 0 0 50px;
 }
 .login_signUpButton {
-  border-radius: 2px;
-  height: 30px;
-  width: 100%;
-  border: 1px solid;
-  margin-top: 10px;
-}
-.login_container > p{
-  font-family: 'Roboto';}
+  margin: 10px 0 0 30px;
 
-  @media screen and (max-width :500px){
-    .login {
-      min-height: 630px !important;
-    ;
-    }
+}
+.login_container > p {
+  font-family: "Roboto";
+}
+
+@media screen and (max-width: 500px) {
+  .login {
+    min-height: 630px !important;
   }
+}

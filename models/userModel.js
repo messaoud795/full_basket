@@ -4,7 +4,7 @@ const userSchema=mongoose.Schema({
     firstName:{ type : String, required :true},
     lastName:{ type : String, required :true},
     address:{ type : String, required :true},
-    email: { type : String, required :true, unique:true},
+    email: { type : String, required :true, unique:true,lowercase: true},
     password : { type : String, required :true},
     isAdmin: {type : Boolean, default: false, required:true},
     basketId: {type:mongoose.Schema.Types.ObjectId, ref:'basket'},

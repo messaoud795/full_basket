@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
+import {Button} from "react-bootstrap"
 
 function LoginAdmin() {
     const [email, setEmail] = useState("");
@@ -59,15 +60,15 @@ function LoginAdmin() {
               onChange={(e) => setPassword(e.target.value)
               }
             />
-            <button className="login_signInButton" onClick={login} type="submit">
+            <Button variant="primary" className="login_signInButton" onClick={login} type="submit">
               Sign in
-            </button>
+            </Button>
           </form>
           <p>Not registred yet?</p>
           <Link to='/Register'>
-          <button className="login_signUpButton" >
+          <Button variant="secondary" className="login_signUpButton" >
             Create your own account
-          </button>
+          </Button>
           </Link>
         </div>
       </div>

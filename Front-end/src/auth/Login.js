@@ -79,7 +79,7 @@ function Login() {
               console.log(error);
             });
         }
-        history.push("/");
+        history.goBack();
       }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps

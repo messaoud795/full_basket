@@ -4,7 +4,7 @@ import SimpleModal from "./CreateForm";
 import DeleteIcon from "@material-ui/icons/Delete";
 import EditIcon from "@material-ui/icons/Edit";
 import axios from "axios";
-import Pop_up from "../PopUp";
+import Pop_up from "./PopUp";
 import ConfirmModal from "./ConfirmModal";
 
 const tokenAdmin = window.localStorage.getItem("tokenAdmin");

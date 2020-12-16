@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 import "./Register.css";
-import PopUp from '../PopUp'
+import PopUp from '../../../components/PopUp'
 import { useSelector , useDispatch} from "react-redux";
 
 function Register() {

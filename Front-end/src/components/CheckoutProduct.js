@@ -1,7 +1,7 @@
 import React, { useState,useEffect} from "react";
 import "./CheckoutProduct.css";
 import { useDispatch , useSelector} from "react-redux";
-import PopUp from '../PopUp'
+import PopUp from '../components/PopUp'
 import DeleteIcon from "@material-ui/icons/Delete";
 
 

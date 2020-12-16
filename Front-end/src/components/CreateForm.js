@@ -3,9 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import "./CreateForm.css";
 import ImageUpload from "./ImageUpload";
-import { CategoryList } from "../CategoryList";
-import CreateRequest from "./CreateRequest";
-import EditRequest from "./EditRequest";
+import { CategoryList } from "./CategoryList";
+import CreateRequest from "../actions/CreateRequest";
+import EditRequest from "../actions/EditRequest";
 
 //modal style
 function getModalStyle() {

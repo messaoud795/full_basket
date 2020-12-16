@@ -1,4 +1,4 @@
-import Pop_up from "../PopUp";
+import Pop_up from "../components/PopUp";
 import axios from "axios";
 
 

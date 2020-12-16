@@ -1,12 +1,12 @@
 import React from 'react'
 import  { useState,useEffect } from 'react';
 import './Home.css'
-import Product from './product/Product'
-import Category from './Category'
+import Product from '../../components/Product'
+import Category from '../../components/Category'
 import axios from 'axios';
-import flyer from './res/pictures/flyer.jpg'
-import flyer2 from './res/pictures/flyer2.jpg'
-import flyer3 from './res/pictures/flyer3.jpg'
+import flyer from '../../res/pictures/flyer.jpg'
+import flyer2 from '../../res/pictures/flyer2.jpg'
+import flyer3 from '../../res/pictures/flyer3.jpg'
 import {Carousel} from 'react-bootstrap'
 
 

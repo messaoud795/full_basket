@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import './Order.css'
-import Header from "./Header";
-import PopUp from './PopUp'
+import Header from "../../components/Header";
+import PopUp from '../../components/PopUp'
 import axios from "axios";
 import { useHistory } from "react-router-dom";
 import {Row , Col ,Button} from "react-bootstrap"
@@ -19,7 +19,7 @@ const removeBasket=()=>{
     dispatch({type:"RemoveBasket"});
 }
   
-  //save order to the database 
+//save order to the database 
  async function saveOrder() {
        axios.post("/api/order/create",{
          basket:basket,

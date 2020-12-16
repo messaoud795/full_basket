@@ -10,7 +10,7 @@ function Category() {
        <Row  className="category">
 
         {CategoryList.map((el, i) => (  
-            <Col xs={2} key={i}><Link to={`/${el}`} className='catLink' >
+            <Col xs={2} key={i}><Link to={`/${el}`} className='catLink' id="cat">
               
                <span > {el}</span>
              </Link> </Col>

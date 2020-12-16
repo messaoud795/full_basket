@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Users.css";
-import HeaderAdmin from "./HeaderAdmin";
+import HeaderAdmin from "../../components/HeaderAdmin";
 import {Button} from 'react-bootstrap'
 
 function Users() {

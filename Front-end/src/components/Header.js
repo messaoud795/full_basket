@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./Header.css";
 import { Link, useHistory } from "react-router-dom";
 import SearchIcon from "@material-ui/icons/Search";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faSignOutAlt,faSignInAlt  } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
-import logo from "./res/pictures/logo.jpg";
+import logo from "../res/pictures/logo.jpg";
 import { Row, Col } from "react-bootstrap";
-import { useEffect } from "react";
 
 function Header() {
   var { basket } = useSelector((state) => ({ ...state.basketReducer }));

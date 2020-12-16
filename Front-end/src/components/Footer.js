@@ -1,9 +1,9 @@
 import React from "react";
 
-import facebook from "./res/pictures/facebook.png";
-import instagram from "./res/pictures/instagram.png";
-import youtube from "./res/pictures/youtube.png";
-import twitter from "./res/pictures/twitter.png";
+import facebook from "../res/pictures/facebook.png";
+import instagram from "../res/pictures/instagram.png";
+import youtube from "../res/pictures/youtube.png";
+import twitter from "../res/pictures/twitter.png";
 
 import "./Footer.css";
 

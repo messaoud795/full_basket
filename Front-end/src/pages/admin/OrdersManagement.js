@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import HeaderAdmin from "./HeaderAdmin";
+import HeaderAdmin from "../../components/HeaderAdmin";
 import axios from "axios";
 import "./OrdersManagement.css"
 import { useHistory } from "react-router-dom";

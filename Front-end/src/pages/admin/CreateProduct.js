@@ -1,11 +1,11 @@
-import HeaderAdmin from "./HeaderAdmin";
+import HeaderAdmin from "../../components/HeaderAdmin";
 import React from "react";
 import { useState, useEffect } from "react";
-import ProductAdmin from "./ProductAdmin";
-import Category from "../Category";
+import ProductAdmin from "../../components/ProductAdmin";
+import Category from "../../components/Category";
 import "./CreateProduct.css";
-import SimpleModal from "./CreateForm";
-import GetProducts from'./GetProducts';
+import SimpleModal from "../../components/CreateForm";
+import GetProducts from'../../actions/GetProducts';
 import {Button} from 'react-bootstrap'
 
 function CreateProduct() {

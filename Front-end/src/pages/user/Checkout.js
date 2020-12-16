@@ -1,6 +1,6 @@
 import React from 'react'
 import './Checkout.css'
-import CheckoutProduct from './product/CheckoutProduct'
+import CheckoutProduct from '../../components/CheckoutProduct'
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Row, Col } from 'react-bootstrap';

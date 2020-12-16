@@ -1,10 +1,10 @@
 import React,{useEffect, useState} from 'react'
-import HeaderAdmin from './HeaderAdmin'
+import HeaderAdmin from '../../components/HeaderAdmin'
 import { useParams } from "react-router-dom";
 import axios from 'axios'
 import './OrderUpdate.css'
-import ConfirmModal from "./ConfirmModal";
-import Pop_up from '../PopUp';
+import ConfirmModal from "../../components/ConfirmModal";
+import Pop_up from '../../components/PopUp';
 import {Button} from 'react-bootstrap'
 
 

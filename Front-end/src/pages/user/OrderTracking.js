@@ -2,8 +2,8 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./OrderTracking.css";
-import Header from "./Header";
-import OrderStatus from "./OrderStatus";
+import Header from "../../components/Header";
+import OrderStatus from "../../components/OrderStatus";
 
 function OrderTracking() {
   const [orders, setorders] = useState([]);

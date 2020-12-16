@@ -1,28 +1,28 @@
 import React from "react";
 import "./App.css";
-import Header from "./Header";
-import Home from "./Home";
-import Checkout from "./Checkout";
-import Login from "./auth/Login";
-import Register from "./auth/Register";
-import Order from "./Order";
-import ProductByCategory from "./product/ProductByCategory";
-import SearchProduct from "./product/SearchProduct";
-import OrderTracking from "./OrderTracking";
-import Footer from "./Footer";
+import Header from "./components/Header";
+import Home from "./pages/user/Home";
+import Checkout from "./pages/user/Checkout";
+import Login from "./pages/user/auth/Login";
+import Register from "./pages/user/auth/Register";
+import Order from "./pages/user/Order";
+import ProductByCategory from "./pages/user/ProductByCategory";
+import SearchProduct from "./pages/user/SearchProduct";
+import OrderTracking from "./pages/user/OrderTracking";
+import Footer from "./components/Footer";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
 } from "react-router-dom";
-import Category from "./Category";
-import LoginAdmin from "./admin/LoginAdmin";
-import CreateProduct from "./admin/CreateProduct";
-import OrdersManagement from "./admin/OrdersManagement";
-import OrderUpdate from "./admin/OrderUpdate";
-import Users from "./admin/Users";
-import SaveBasketToDB from "./auth/SaveBasketToDB";
+import Category from "./components/Category";
+import LoginAdmin from "./pages/admin/LoginAdmin";
+import CreateProduct from "./pages/admin/CreateProduct";
+import OrdersManagement from "./pages/admin/OrdersManagement";
+import OrderUpdate from "./pages/admin/OrderUpdate";
+import Users from "./pages/admin/Users";
+import SaveBasketToDB from "./actions/SaveBasketToDB";
 
 
 function App() {
@@ -63,8 +63,6 @@ function App() {
              window.localStorage.removeItem("tokenAdmin");     
              window.localStorage.removeItem("token");
              window.localStorage.removeItem("firstName");
-             console.log("hiii")
-            // window.location.reload();
             return <Redirect to={{ pathname: "/" }} />;
           } else {
             return <props.component />;

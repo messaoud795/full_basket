@@ -144,11 +144,10 @@ router.get("/all", authAdmin, async (req, res) => {
 });
 //update the status of a user
 router.put("/update", authAdmin, async (req, res) => {
-  console.log(req.body)
   user.findByIdAndUpdate(
     req.body._id,
     { isAdmin: req.body.isAdmin },
-    ((err, data) => err ? res.send(err) : res.send(true))
+    (err, data) => (err ? res.send(err) : res.send(true))
   );
 });
 

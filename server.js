@@ -47,10 +47,8 @@ app.get("/uploads/images/:name", function (req, res) {
   });
 });
 
-const mongo_url =
-  "mongodb+srv://nabil123:PB84yFy93nlI1duZ@cluster0.pkyyp.mongodb.net/<dbname>?retryWrites=true&w=majority";
 
-mongoose.connect(process.env.mongo_url || mongo_url, {
+mongoose.connect(process.env.mongo_url , {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,

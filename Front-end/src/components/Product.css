@@ -1,5 +1,5 @@
 .product {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   height: 520px;
   width: 300px;
@@ -9,6 +9,7 @@
   margin: 12px ;
   align-items: center;
   transition: 0.3s;
+  border-radius: 5px;
 }
 .product:hover {
   transform: scale(1.1);

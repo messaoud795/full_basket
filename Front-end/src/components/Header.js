@@ -39,7 +39,7 @@ function connect(userFistName) {
   return (
       <Row className="header">
         {/* logo on the left   */}
-        <Col xs={{span:2 , order : 1}} md={{span:2 , order : 1}} > 
+        <Col xs={{span:2 , order : 1}} md={{span:1 , order : 1}} > 
           <Link to="/">
             <img className="header-logo" src={logo} alt="" />
           </Link>
@@ -60,8 +60,15 @@ function connect(userFistName) {
             </button>
           </form>
         </Col>
-        <Col xs={{span:10, order : 2}} md={{span:6 , order : 1}} >
+        <Col xs={{span:10, order : 2}} md={{span:5 , order : 1}} >
           <Row className="header_nav">
+                {/* Order */}
+                <Col xs={3}  md={4} className="header_option">
+              <Link to="/order/tracking" className="header_link">
+               {userFistName &&<span className="hearder_optionLineTwo">Order tracking</span>}
+              
+              </Link>
+            </Col>
             {/*Basket*/}
             <Col xs={3} md={2}>
               <Link to="/checkout" className="header_Basket">
@@ -73,13 +80,7 @@ function connect(userFistName) {
                 />
               </Link>
             </Col>
-            {/* Order */}
-            <Col xs={3}  md={3} className="header_option">
-              <Link to="/order/tracking" className="header_link">
-               <span className="hearder_optionLineTwo">Order tracking</span>
-              
-              </Link>
-            </Col>
+        
             {/* Sign In and out */}
             <Col xs={4} md={4}  className="header_userAuth">
               {/* Name of the user connected */}

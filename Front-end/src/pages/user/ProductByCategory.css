@@ -2,7 +2,6 @@
   padding: 20px;
   margin: 0 !important;
   width: 100%;
-  min-height: 470px;
 }
 .productByCategory > h2 {
   margin: 20px 10px 0px;
@@ -19,12 +18,11 @@
 .sort > span {
   padding: 0 10px;
 }
-@media screen and (max-width : 500px){
+@media screen and (max-width: 500px) {
   .productByCategory > h2 {
     font-size: 18px;
   }
   .sort {
-   font-size: 15px;
+    font-size: 15px;
   }
- 
 }

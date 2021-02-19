@@ -1,7 +1,5 @@
 .orderTracking {
   margin: 0 !important;
-  min-height: 88vh !important;
-
 }
 .orderTracking_content {
   padding: 20px;
@@ -54,9 +52,9 @@
     justify-content: center;
   }
   .orderTracking_timeline {
-    top:0,;left:0
+    top: 0;
+    left: 0;
   }
- 
 }
 @media screen and (max-width: 700px) {
   .orderTracking h2 {
@@ -80,5 +78,4 @@
     position: relative !important;
     padding: 0px;
   }
- 
 }

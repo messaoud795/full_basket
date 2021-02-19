@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import Product from "../../components/Product";
-import './SearchProduct.css'
+import "./SearchProduct.css";
 
 function SearchProduct() {
   const [product, setproduct] = useState([]);
@@ -24,7 +24,7 @@ function SearchProduct() {
   }, []);
 
   return (
-    <div className='searchProduct'>
+    <div className="searchProduct">
       {product.length === 0 ? (
         setTimeout(() => <h2> Product not found</h2>, 1000)
       ) : (

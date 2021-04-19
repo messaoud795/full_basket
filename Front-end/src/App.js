@@ -24,7 +24,6 @@ import OrderUpdate from "./pages/admin/OrderUpdate";
 import Users from "./pages/admin/Users";
 import SaveBasketToDB from "./actions/SaveBasketToDB";
 
-
 function App() {
   function SecureRoute(props) {
     let token = window.localStorage.getItem("token");
@@ -57,12 +56,12 @@ function App() {
       <Route
         path={props.path}
         render={() => {
-          if ((token)||(tokenAdmin)) {
-             SaveBasketToDB(token);
-            window.localStorage.removeItem("basketStored");   
-             window.localStorage.removeItem("tokenAdmin");     
-             window.localStorage.removeItem("token");
-             window.localStorage.removeItem("firstName");
+          if (token || tokenAdmin) {
+            SaveBasketToDB(token);
+            window.localStorage.removeItem("basketStored");
+            window.localStorage.removeItem("tokenAdmin");
+            window.localStorage.removeItem("token");
+            window.localStorage.removeItem("firstName");
             return <Redirect to={{ pathname: "/" }} />;
           } else {
             return <props.component />;

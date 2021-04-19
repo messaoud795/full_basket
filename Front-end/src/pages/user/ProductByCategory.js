@@ -20,22 +20,21 @@ function SearchProduct() {
         console.log(error);
       });
   }, [cat]);
- 
 
-
-
-  const  sort = () => {
+  const sort = () => {
     var method = document.getElementById("sort").value;
     if (method === "Alphabetically") {
-      setproductsByCategory([...productsByCategory.sort((a, b) => a.title.localeCompare(b.title))] );
-      console.log(productsByCategory);} 
-    else if (method === "by price"){
-       setproductsByCategory([...productsByCategory.sort((a, b) => a.price.localeCompare(b.price))]
-      );
+      setproductsByCategory([
+        ...productsByCategory.sort((a, b) => a.title.localeCompare(b.title)),
+      ]);
+      console.log(productsByCategory);
+    } else if (method === "by price") {
+      setproductsByCategory([
+        ...productsByCategory.sort((a, b) => a.price.localeCompare(b.price)),
+      ]);
       console.log(productsByCategory);
     }
   };
- 
 
   return (
     <div className="productByCategory">
@@ -49,9 +48,9 @@ function SearchProduct() {
         </select>
       </div>
       <div className="productByCategory_items">
-        { (productsByCategory.map((product1, i) => (
-    <Product key={i} product={product1} />
-  )))}
+        {productsByCategory.map((product1, i) => (
+          <Product key={i} product={product1} />
+        ))}
       </div>
     </div>
   );

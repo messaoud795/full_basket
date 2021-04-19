@@ -7,6 +7,7 @@ const userRoute = require("./routes/userRoute");
 const productRoute = require("./routes/productRoute");
 const basketRoute = require("./routes/basketRoute");
 const orderRoute = require("./routes/orderRoute");
+const woodRoute = require("./routes/woodRoute");
 const path = require("path");
 
 //app config
@@ -47,8 +48,7 @@ app.get("/uploads/images/:name", function (req, res) {
   });
 });
 
-
-mongoose.connect(process.env.mongo_url , {
+mongoose.connect(process.env.mongo_url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
@@ -65,6 +65,7 @@ app.use("/api/user", userRoute);
 app.use("/api/product", productRoute);
 app.use("/api/basket", basketRoute);
 app.use("/api/order", orderRoute);
+app.use("/api/wood", woodRoute);
 
 // listner
 app.listen(port, () => console.log("server is running on port  " + port));
